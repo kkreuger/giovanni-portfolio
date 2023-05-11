@@ -347,6 +347,7 @@ SERVICES SECTION
 ----------*/
 .services {
     padding: 50px 0;
+    overflow: hidden;
 }
 
 .services-top-wrapper {
@@ -528,6 +529,11 @@ ABOUT PAGE
 
 .about h1 {
     margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.about .subtitle {
+    font-size: 20px;
 }
 
 .accordion {

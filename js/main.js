@@ -105,7 +105,8 @@ window.onresize = scroll.update();
 function playSlider() {
     $('.client-slider').slick({
         autoplay: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
+        arrows: false,
         mobileFirst: true,
         responsive: [
             {
