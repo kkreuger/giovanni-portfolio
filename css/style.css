@@ -89,10 +89,6 @@ p {
     pointer-events: none;
 }
 
-.load-screen img {
-    position: absolute;
-}
-
 @media (min-width: 768px) {
     .loading-screen {
         background-size: 1020px;

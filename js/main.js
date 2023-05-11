@@ -117,3 +117,7 @@ function playSlider() {
         ]
     });
 };
+
+function openAccordion(element) {
+    element.parentElement.classList.toggle('active')
+}
