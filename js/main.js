@@ -34,19 +34,6 @@ function contentAnimation() {
     tl.from("main", { duration: 1, x: -500, opacity: 0, stagger: 0.4, delay: 0.2 })
 }
 
-var links = document.querySelectorAll('a[href]');
-var cbk = function (e) {
-    if (e.currentTarget.href === window.location.href) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-};
-
-for (var i = 0; i < links.length; i++) {
-    console.log('hallo')
-    links[i].addEventListener('click', cbk);
-}
-
 $(function () {
     barba.init({
         sync: true,
