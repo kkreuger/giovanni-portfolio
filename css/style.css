@@ -71,9 +71,11 @@ p {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #F6A92B;
     width: 0%;
     height: 100%;
+    background: url('../img/smiley.svg') no-repeat, #F6A92B;
+    background-size: 500px;
+    background-position: center;
 }
 
 .load-container {
@@ -85,6 +87,34 @@ p {
     overflow: hidden;
     z-index: 10;
     pointer-events: none;
+}
+
+.load-screen img {
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .loading-screen {
+        background-size: 1020px;
+    }
+}
+
+@media (min-width: 992px) {
+    .loading-screen {
+        background-size: 1200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .loading-screen {
+        background-size: 1400px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .loading-screen {
+        background-size: 1600px;
+    }
 }
 
 /* --------- 
@@ -502,4 +532,68 @@ ABOUT PAGE
 
 .about h1 {
     margin-bottom: 30px;
+}
+
+.accordion {
+    max-height: 28px;
+    padding: 30px 0;
+    overflow: hidden;
+    border-top: 1px solid black;
+    transition: max-height .3s ease-in-out;
+}
+
+.accordion p {
+    margin-left: 30px;
+}
+
+.accordion h3 {
+    font-weight: 500;
+}
+
+.accordion .order {
+    display: block;
+}
+
+.accordion.active {
+    max-height: 100px;
+}
+
+.accordion:last-child {
+    border-bottom: 1px solid black;
+}
+
+.accordion button {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.accordion button p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .accordion {
+        max-height: 26px;
+    }
+
+    .accordion h3,
+    .accordion .order {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .accordion button {
+        grid-template-columns: 150px 1fr 30px;
+    }
+
+    .accordion p {
+        margin-left: 150px;
+    }
 }
