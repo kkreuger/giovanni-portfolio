@@ -43,6 +43,7 @@ var cbk = function (e) {
 };
 
 for (var i = 0; i < links.length; i++) {
+    console.log('hallo')
     links[i].addEventListener('click', cbk);
 }
 
