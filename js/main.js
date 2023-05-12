@@ -17,8 +17,6 @@ function pageTransitionIn() {
         left: "0%",
         ease: "Expo.easeInOut",
     })
-
-    // tl.set(".loading-screen", { left: "0%", width: "0%" });
 }
 
 function pageTransitionOut() {
