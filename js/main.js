@@ -9,14 +9,20 @@ function delay(n) {
 }
 
 // Animation - Page transition In
-function pageTransition() {
+function pageTransitionIn() {
     const tl = gsap.timeline();
     tl.to(".loading-screen", {
         duration: 1.2,
         width: "100%",
         left: "0%",
         ease: "Expo.easeInOut",
-    });
+    })
+
+    // tl.set(".loading-screen", { left: "0%", width: "0%" });
+}
+
+function pageTransitionOut() {
+    const tl = gsap.timeline();
 
     tl.to(".loading-screen", {
         duration: 1,
@@ -31,7 +37,7 @@ function pageTransition() {
 
 function contentAnimation() {
     const tl = gsap.timeline()
-    tl.from("main", { duration: 1, x: -500, opacity: 0, stagger: 0.4, delay: 0.2 })
+    tl.from("main", { duration: 1, x: -500, opacity: 0, stagger: 0.4 })
 }
 
 $(function () {
@@ -42,17 +48,19 @@ $(function () {
                 async leave(data) {
                     const done = this.async()
 
-                    pageTransition()
+                    pageTransitionIn()
                     await delay(1000)
                     done()
                 },
 
                 async enter(data) {
+                    pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
                 },
 
                 async once(data) {
+                    pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
                 },
