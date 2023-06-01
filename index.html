@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./ccs/locomotive.css">
+    <link rel="stylesheet" href="./css/locomotive.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Homepage</title>
 </head>
 
-<body data-barba="wrapper">
+<body data-barba="wrapper" class="homepage">
     <div data-scroll-container>
         <div class="load-container">
             <div class="loading-screen"></div>
@@ -26,30 +26,41 @@
             <div class="slide-nav">
                 <button onclick="toggleMenu()">Close</button>
                 <nav>
-                    <a href="/">Work</a>
-                    <a href="/about.html">About</a>
-                    <a href="/contact.html">Contact</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
                 </nav>
             </div>
             <header class="header" id="header" data-scroll-section>
                 <div class="container">
                     <div class="desktop-header">
-                        <a href="/"><img src="./img/logo.svg" alt=""></a>
+                        <a href="/"><img src="./img/logo-white.svg" alt=""></a>
                         <span>Creative Designer/<br>Brand Manager</span>
                         <span>Based in Torino<br> Italy</span>
                         <nav>
-                            <a href="/">Work,</a>
-                            <a href="/about.html">About,</a>
-                            <a href="/contact.html">Contact</a>
+                            <a href="/about">About,</a>
+                            <a href="/contact">Contact</a>
                         </nav>
                     </div>
                     <div class="mobile-header">
-                        <img src="">
+                        <a href="/"><img src="./img/logo-white.svg" alt=""></a>
                         <button onclick="toggleMenu()">MENU</button>
                     </div>
                 </div>
             </header>
 
+            <section class="first" id="first" data-scroll-section>
+                <div class="container">
+                    <div class="first-wrapper">
+                        <div class="content">
+                            <span>i do what i do</span>
+                            <span>and what i do</span>
+                            <span>is what i do.</span>
+                            <img data-scroll data-scroll-speed="1" src="./img/smiley-yellow.svg">
+                        </div>
+                        <div class="bottom-sentence">JUST KIDDIN, SCROLL DOWN AND CHECK WHAT I CAN DO FOR YOU</div>
+                    </div>
+                </div>
+            </section>
 
             <section class="hero" id="hero" data-scroll-section>
                 <div class="container">
