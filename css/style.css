@@ -221,12 +221,6 @@ HEADER
         color: #000;
         text-decoration: none;
     }
-
-    .homepage .desktop-header nav a,
-    .homepage .desktop-header span {
-        color: white;
-        mix-blend-mode: exclusion;
-    }
 }
 
 /* --------- 
