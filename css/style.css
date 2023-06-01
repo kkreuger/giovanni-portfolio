@@ -171,6 +171,7 @@ HEADER
     color: #000;
     font-weight: 700;
     text-transform: uppercase;
+    mix-blend-mode: exclusion;
 }
 
 .mobile-header {
@@ -224,6 +225,7 @@ HEADER
     .homepage .desktop-header nav a,
     .homepage .desktop-header span {
         color: white;
+        mix-blend-mode: exclusion;
     }
 }
 
