@@ -89,6 +89,18 @@ p {
     pointer-events: none;
 }
 
+.button {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    padding: 20px 0 20px 40px;
+    background: url(../img/smiley.svg) no-repeat;
+    background-size: 30px;
+    background-position: 0 13px;
+    margin-top: 20px;
+    display: block;
+}
+
 @media (min-width: 768px) {
     .loading-screen {
         background-size: 1020px;
