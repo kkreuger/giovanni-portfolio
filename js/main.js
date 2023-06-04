@@ -54,7 +54,6 @@ $(function () {
                 async enter(data) {
                     pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
-                    if (data.next.namespace === 'work') playSlider()
                     contentAnimation()
                 },
 
