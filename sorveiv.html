@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./ccs/locomotive.css">
+    <link rel="stylesheet" href="./css/locomotive.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Contact</title>
+    <title>Work</title>
 </head>
 
 <body data-barba="wrapper">
-    <div data-scroll-container>
+    <div data-scroll-container class="work">
         <div class="load-container">
             <div class="loading-screen"></div>
         </div>
 
-        <main data-barba="container" data-barba-namespace="contact" class="contact-page">
+        <main data-barba="container" data-barba-namespace="home">
             <div class="slide-nav">
                 <button onclick="toggleMenu()">Close</button>
                 <nav>
@@ -34,9 +35,9 @@
             <header class="header" id="header" data-scroll-section>
                 <div class="container">
                     <div class="desktop-header">
-                        <a href="/"><img src="./img/logo-white.svg" alt="Giovanni Garrone logo"></a>
-                        <span>Creative Designer/<br>Brand Manager</span>
-                        <span>Based in Torino<br> Italy</span>
+                        <span>Case study</span>
+                        <a href="/"><span>Visit live link</span></a>
+                        <span>SØRVEIV 2017</span>
                         <nav>
                             <a href="/work">Work,</a>
                             <a href="/about">About,</a>
@@ -44,25 +45,28 @@
                         </nav>
                     </div>
                     <div class="mobile-header">
-                        <a href="/"><img src="./img/logo-white.svg" alt=""></a>
+                        <a href="/"><img src="./img/logo.svg" alt=""></a>
                         <button onclick="toggleMenu()">MENU</button>
                     </div>
                 </div>
             </header>
 
-            <section class="contact" id="contact" data-scroll-section>
-                <div class="container">
-                    <div class="contact-wrapper">
-                        <span class="top-title">send me a message</span>
-                        <a href="mailto:giovannigarrone10@gmail.com">giovannigarrone10@gmail.com</a>
+            <section class="case-study" data-scroll-section>
+                    <div class="case-wrapper">
+                        <div class="content">
+                            <div>
+                                <h3>“The only truth is music.”</h3>
+                                <p>Sørveiv is Southern Norway’s music industry meeting and brings together the music industry from the Agder counties, Norway and the rest of the Nordic region for showcase concerts and an international music conference.</p>
+                            </div>
+                            <div class="category">
+                                <span>Category: Branding</span>
+                                <p>Year 2017</p>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./img/client.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="social-media">
-                        <span class="top-title">send me a message</span>
-                        <a href="https://www.instagram.com/_giovannigarrone/" target="_blank">instagram</a>
-                        <a href="https://www.behance.net/giovannigarrone">behance</a>
-                        <a href="https://dribbble.com/giovannigarrone">dribbble</a>
-                    </div>
-                </div>
             </section>
         </main>
     </div>

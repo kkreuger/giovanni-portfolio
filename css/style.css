@@ -45,6 +45,10 @@ h1 {
     pointer-events: none;
 }
 
+h1 span {
+    color: #BBB9B8;
+}
+
 h2 {
     color: black;
     font-weight: 600;
@@ -60,6 +64,10 @@ p {
     font-weight: 400;
     line-height: 1.65;
     margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .heigh-index {
@@ -171,7 +179,7 @@ HEADER
     color: #000;
     font-weight: 700;
     text-transform: uppercase;
-    mix-blend-mode: exclusion;
+    text-decoration: underline;
 }
 
 .mobile-header {
@@ -181,18 +189,25 @@ HEADER
     padding-top: 20px;
 }
 
-.homepage .mobile-header button,
-.homepage .slide-nav button {
-    border: 2px solid white;
+.mobile-header button,
+.slide-nav button {
+    border: 2px solid black;
     padding: 10px 30px;
     border-radius: 50px;
-    color: white;
+    color: black;
     font-weight: 600;
     text-transform: uppercase;
-    background: #000;
+    background: transparent;
     width: fit-content;
     justify-self: end;
     cursor: pointer;
+}
+
+.homepage .mobile-header button,
+.homepage .slide-nav button {
+    border: 2px solid white;
+    color: white;
+    background: #000;
 }
 
 .homepage .slide-nav button {
@@ -874,5 +889,108 @@ CONTACT PAGE
     
     .contact a {
         font-size: 80px;
+    }
+}
+
+/* --------- 
+WORK SECTION 
+----------*/
+.work a {
+    text-decoration: none;
+}
+
+.work header a {
+    color: black;
+}
+
+.work-subsection {
+    margin-top: 30px;
+}
+
+.work-subsection span {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.case-study {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    margin: 0 20px;
+}
+
+.case-study h3 {
+    margin-bottom: 50px;
+}
+
+.case-study .image {
+    margin-top: 50px;
+}
+
+.case-study .category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.case-study .category span {
+    font-size: 14px;
+}
+
+.case-study .category p {
+    justify-self: end;
+}
+
+@media (min-width: 768px) {
+    .work-subsection {
+        display: grid;
+        grid-template-columns: 20% 400px;
+        margin-top: 100px;
+    }
+
+    .case-study {
+        margin: 0;
+    }
+
+    .case-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .case-wrapper .content {
+        padding-left: 20px;
+        padding-right: 50px;
+        display: grid;
+    }
+
+    .case-study .category {
+        align-self: end;
+    }
+
+    .case-study .image {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .case-study {
+        background: url(../img/smiley.svg) no-repeat;
+        background-size: 300px;
+        background-position: center;
+    }
+
+    .case-wrapper .content {
+        padding-right: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .case-wrapper .content {
+        padding-right: 50%;
+    }
+
+    .case-study {
+        background-size: 400px;
     }
 }
