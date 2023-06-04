@@ -54,12 +54,14 @@ $(function () {
                 async enter(data) {
                     pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
+                    if (data.next.namespace === 'work') playSlider()
                     contentAnimation()
                 },
 
                 async once(data) {
                     pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
+                    if (data.next.namespace === 'work') playSlider()
                     contentAnimation()
                 },
             },
@@ -86,10 +88,6 @@ barba.hooks.after(() => {
     scroll.update();
     scroll.start();
 });
-
-// barba.Dispatcher.on('newPageReady', function(current, prev, container) {
-//     history.scrollRestoration = 'manual';
-// });
 
 function toggleMenu() {
     document.querySelector('.slide-nav').classList.toggle('open')
