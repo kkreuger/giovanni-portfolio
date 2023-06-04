@@ -87,6 +87,10 @@ barba.hooks.after(() => {
     scroll.start();
 });
 
+Barba.Dispatcher.on('newPageReady', function(current, prev, container) {
+    history.scrollRestoration = 'manual';
+});
+
 function toggleMenu() {
     document.querySelector('.slide-nav').classList.toggle('open')
 }
