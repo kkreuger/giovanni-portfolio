@@ -191,23 +191,13 @@ HEADER
 
 .mobile-header button,
 .slide-nav button {
-    border: 2px solid black;
     padding: 10px 30px;
     border-radius: 50px;
-    color: black;
     font-weight: 600;
     text-transform: uppercase;
-    background: transparent;
     width: fit-content;
     justify-self: end;
     cursor: pointer;
-}
-
-.homepage .mobile-header button,
-.homepage .slide-nav button {
-    border: 2px solid white;
-    color: white;
-    background: #000;
 }
 
 .homepage .slide-nav button {
