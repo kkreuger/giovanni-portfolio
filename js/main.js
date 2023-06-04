@@ -52,6 +52,7 @@ $(function () {
                 },
 
                 async enter(data) {
+                    $(window).scrollTop(0);
                     pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
@@ -87,9 +88,9 @@ barba.hooks.after(() => {
     scroll.start();
 });
 
-barba.Dispatcher.on('newPageReady', function(current, prev, container) {
-    history.scrollRestoration = 'manual';
-});
+// barba.Dispatcher.on('newPageReady', function(current, prev, container) {
+//     history.scrollRestoration = 'manual';
+// });
 
 function toggleMenu() {
     document.querySelector('.slide-nav').classList.toggle('open')
