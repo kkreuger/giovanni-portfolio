@@ -87,7 +87,7 @@ barba.hooks.after(() => {
     scroll.start();
 });
 
-Barba.Dispatcher.on('newPageReady', function(current, prev, container) {
+barba.Dispatcher.on('newPageReady', function(current, prev, container) {
     history.scrollRestoration = 'manual';
 });
 
