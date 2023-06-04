@@ -52,7 +52,6 @@ $(function () {
                 },
 
                 async enter(data) {
-                    $(window).scrollTop(0);
                     pageTransitionOut()
                     if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
@@ -73,6 +72,7 @@ barba.hooks.before(() => {
 });
 
 barba.hooks.enter(() => {
+    $(window).scrollTop(0);
     scroll.scrollTo({
         offset: 0,
         smooth: false,
