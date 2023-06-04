@@ -72,8 +72,7 @@ barba.hooks.before(() => {
 });
 
 barba.hooks.enter(() => {
-    $(window).scrollTop(0);
-    scroll.scrollTo({
+    scroll.scrollTo('top',{
         offset: 0,
         smooth: false,
         disableLerp: true,
