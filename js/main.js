@@ -53,13 +53,13 @@ $(function () {
 
                 async enter(data) {
                     pageTransitionOut()
-                    if (data.next.namespace === 'home' || data.next.namespace === 'work') playSlider()
+                    if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
                 },
 
                 async once(data) {
                     pageTransitionOut()
-                    if (data.next.namespace === 'home' || data.next.namespace === 'work') playSlider()
+                    if (data.next.namespace === 'home') playSlider()
                     contentAnimation()
                 },
             },
