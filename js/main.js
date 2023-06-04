@@ -53,7 +53,8 @@ $(function () {
 
                 async enter(data) {
                     pageTransitionOut()
-                    if (data.next.namespace === 'home' || data.next.namespace === 'work') playSlider()
+                    if (data.next.namespace === 'home') playSlider()
+                    if (data.next.namespace === 'work') playSlider()
                     contentAnimation()
                 },
 
